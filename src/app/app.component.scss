@@ -1,0 +1,26 @@
+$grey: #474747;
+main {
+  background: $grey;
+  color: $grey;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transition: all .4s;
+  font-family: "Helvetica Neue",arial, San-Serif;
+  &.lights-on {
+    background: #ffffff;
+    color: $grey;
+  }
+
+  header {
+    transform: translateY(-6rem);
+    text-align: center;
+    h1, p {
+      margin: 0;
+      font-weight: 200;
+    }
+  }
+}

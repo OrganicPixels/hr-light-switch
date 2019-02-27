@@ -1,0 +1,30 @@
+:host {
+  $grey: #474747;
+
+ .switch{
+   border: 1px solid white;
+   padding: 6rem 1rem;
+   border-radius: .3em;
+   box-sizing: content-box;
+   transition: all .4s;
+   cursor: pointer;
+   &::after {
+     content: 'Off';
+     transition: transform .4s ease-in-out, color .3s;
+     transform: translateY(2.5rem);
+     padding: 2.5rem;
+     display: inline-block;
+     background: white;
+     border-radius: .2em;
+   }
+   &.active{
+     border-color: $grey;
+     &::after {
+       background: $grey;
+       color: white;
+       transform: translateY(-2.5rem);
+       content: 'On';
+     }
+   }
+ }
+}
